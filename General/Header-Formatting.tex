@@ -1,0 +1,40 @@
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begingroup
+  \parindent 0pt
+  \normalfont
+  \if@twocolumn
+    \twocolumn[\@maketitle]
+  \else
+    \@maketitle
+  \fi
+  \endgroup
+  \setcounter{footnote}{0}
+}
+\renewcommand{\@maketitle}{
+  \newpage
+  \null
+  \begin{flushleft}
+    \let \footnote \thanks
+    {
+      \LARGE 
+      \@title 
+      \par
+    }
+
+    \vskip 1.5em
+    {
+      \begin{tabular}[t]{l}
+      \hspace{-10pt}
+      \@author
+      \end{tabular}
+      \par
+      % Some constant value
+    }
+    \vskip 0.5em
+  \end{flushleft}%
+}
+\makeatother

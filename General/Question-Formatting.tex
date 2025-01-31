@@ -1,0 +1,20 @@
+\usepackage{mdframed}
+
+\newcounter{question}[section]  
+\newcommand{\Question}[1]{
+    \begin{mdframed}[backgroundcolor=gray!10, 
+                    hidealllines=true, 
+                    skipabove=12pt, 
+                    skipbelow=12pt, 
+                    leftmargin=-10pt, 
+                    rightmargin=-10pt, 
+                    innertopmargin=10pt, 
+                    innerbottommargin=10pt]
+    \stepcounter{question} 
+    \subsection*{Question \thequestion:} 
+
+    \vspace{10pt} 
+    \noindent{#1}
+    \par 
+    \end{mdframed}
+}

@@ -1,0 +1,65 @@
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm,right=2cm,top=1cm,bottom=2cm]{geometry}
+
+\usepackage{csquotes}
+\usepackage{biblatex}
+\usepackage{blindtext}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref} 
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+
+\usepackage[dvipdfmx]{graphicx}
+
+\geometry{a4paper, margin=1in}
+
+\renewcommand{\thefigure}{\arabic{figure}.0}
+
+\bibliography{References}
+
+% Define custom colors
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={AIEA Report},
+    pdfpagemode=FullScreen,
+}
+\urlstyle{same}
+
+% Indent setting
+\setlength{\parindent}{0pt}
+
+% Define custom style for listings
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+% Apply the custom style to all listings
+\lstset{style=mystyle}
