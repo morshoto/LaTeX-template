@@ -6,7 +6,8 @@ Optimize your LaTeX environment with **VSCode** for seamless report and paper cr
 
 ## Installation
 
-> [!NOTE] Make sure to have vscode as well.
+> [!NOTE]
+> Make sure to have vscode as well.
 
 ```bash
 # For Windows
